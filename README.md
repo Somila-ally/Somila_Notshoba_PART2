@@ -69,7 +69,16 @@ The Part 2 brief requires a few things that the Part 1 ERD did not contain, so t
 Everything else (Roles lookup table, Users, Events, Categories, Enrolments with `Status`, Results with `Position` and
 `RecordedAt`, no cascade deletes) follows the Part 1 ERD.
 
+## Part 2
 
+### Technologies Used
+- ASP.NET Core Web API, .NET 8
+- Entity Framework Core 8 (Code First) with SQL Server
+- Session-based authentication and a custom `[RequireRole]` authorization filter
+- `PasswordHasher<T>` (salted PBKDF2) for password hashing
+- Swashbuckle (Swagger / OpenAPI) with annotations
+- xUnit, `WebApplicationFactory` and the EF Core InMemory provider for tests
+- GitHub Actions for CI
 
 ### Project Structure
 
