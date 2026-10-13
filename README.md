@@ -102,7 +102,26 @@ RaceDay
 Relationships: one Role has many Users; one Organiser has many Events; one Event has many Categories and many
 Enrolments; one Participant has many Enrolments; one Category has many Enrolments; one Enrolment has zero or one Result.
 
+### Database Setup
 
+1. Install .NET 8 SDK, SQL Server (Express or LocalDB) and Visual Studio 2022.
+2. Open `RaceDay.sln`.
+3. In `RaceDay.Api/appsettings.json` set the connection string for your SQL Server instance. The default is
+   `Server=.\SQLEXPRESS;Database=RaceDayDb;Trusted_Connection=True;TrustServerCertificate=True;`
+4. Create the database (Entity Framework Core Code First). The initial migration `InitialRaceDayDatabase` is already
+   in `RaceDay.Api/Migrations`, so you only need to apply it. In **Tools > NuGet Package Manager > Package Manager
+   Console**, with `RaceDay.Api` as the default project:
+   ```
+   Update-Database
+   ```
+   or from a terminal in the repository root:
+   ```
+   dotnet ef database update --project RaceDay.Api
+   ```
+   To regenerate the migration from the models instead, delete the `RaceDay.Api/Migrations` folder and run
+   `Add-Migration InitialRaceDayDatabase` followed by `Update-Database`.
+5. Open SQL Server Management Studio and confirm `RaceDayDb` contains Roles, Users, Events, Categories,
+   Enrolments and Results. The Roles table is seeded with `Organiser` and `Participant`.
 
 The original Part 1 SQL script is retained for traceability. Part 2 requires event distance/type and a direct event link for
 an enrolment; these changes are documented above and represented in `docs/RaceDay_Part2_Database.sql` and the EF Core
