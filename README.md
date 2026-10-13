@@ -50,7 +50,11 @@ The planning/database documents are kept in [`docs/`](docs):
 - `RaceDay_Part2_Database.sql` - Part 2 schema reference including the required event fields and event-enrolment relationship
 - `RaceDay_API_Endpoint_Plan.md` - Part 2 working endpoint reference reconstructed from the current implementation
 
+**Submission action required:** the supplied project ZIP did not contain the approved Part 1 API endpoint plan. Add that exact approved document to `docs/` and compare it with `RaceDay_API_Endpoint_Plan.md`. Do not submit the reconstructed reference as though it were the original approved Part 1 document.
 
+### Differences from Part 1
+
+The Part 2 brief requires a few things that the Part 1 ERD did not contain, so the implementation deliberately adds them:
 
 | Change | Reason |
 |---|---|
