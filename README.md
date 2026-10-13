@@ -29,7 +29,17 @@ text, only as a salted hash.
 - Enters an event by choosing a category, and views their own enrolments.
 - Views their own race results.
 
-
+| Capability | Organiser | Participant |
+|---|:---:|:---:|
+| Register / log in / log out | Yes | Yes |
+| View and update own profile | Yes | Yes |
+| View events and categories | Yes | Yes |
+| Create / update / delete events (own only) | Yes | 403 |
+| Create / update / delete categories (own events only) | Yes | 403 |
+| Enter an event | 403 | Yes |
+| View enrolments for an event / change status (own events only) | Yes | 403 |
+| Record results (own events only) | Yes | 403 |
+| View own results | 403 | Yes |
 
 ## Part 1
 
