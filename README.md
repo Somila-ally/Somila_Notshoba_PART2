@@ -23,11 +23,7 @@ text, only as a salted hash.
 - Views the enrolments for their own events and changes an enrolment's status.
 - Records finish times and finishing positions, and views the results of their own events.
 
-### Participant
-- Registers, logs in and views/updates their own profile.
-- Browses all events and their categories.
-- Enters an event by choosing a category, and views their own enrolments.
-- Views their own race results.
+
 
 | Capability | Organiser | Participant |
 |---|:---:|:---:|
