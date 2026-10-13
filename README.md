@@ -54,17 +54,7 @@ The planning/database documents are kept in [`docs/`](docs):
 
 ### Differences from Part 1
 
-The Part 2 brief requires a few things that the Part 1 ERD did not contain, so the implementation deliberately adds them:
 
-| Change | Reason |
-|---|---|
-| `Events.DistanceKm` and `Events.EventType` (Run / Walk / Cycle) added | The Part 2 brief states every event must capture name, description, date, location, **distance and event type**. |
-| `Enrolments.EventId` added (FK to Events) | The Part 2 brief states an enrolment links the **Participant, Event and Category**, and organisers view enrolments per event. The unique constraint stays `(ParticipantId, CategoryId)`, so a participant can enter several categories of one event but never the same category twice. |
-| Registration accepts `FirstName` + `LastName` | The brief's `RegisterRequest` has separate names; they are combined into the ERD's single `Users.FullName` column. |
-| `CreateCategoryRequest.DistanceKm` is optional | Categories can be age groups (e.g. "Senior") with no distance of their own; it then defaults to the event's distance, so the ERD's `Categories.DistanceKm NOT NULL` still holds. |
-| C# property `Event.Name` maps to the ERD column `EventName` | The brief's Event model lists `Name`; `[Column("EventName")]` keeps the database identical to the ERD. |
-| `Description` is required when creating or updating an event | The brief states every event must capture name, description, date, location, distance and event type. The ERD column stays nullable. |
-| New enrolments start as `Pending`; statuses are Pending, Confirmed, Cancelled | These are the statuses named in the Part 2 brief (the ERD's default text `Registered` is no longer used). The `Status` column itself is unchanged. |
 
 Everything else (Roles lookup table, Users, Events, Categories, Enrolments with `Status`, Results with `Position` and
 `RecordedAt`, no cascade deletes) follows the Part 1 ERD.
