@@ -41,14 +41,7 @@ text, only as a salted hash.
 | Record results (own events only) | Yes | 403 |
 | View own results | 403 | Yes |
 
-## Part 1
 
-The planning/database documents are kept in [`docs/`](docs):
-
-- `RaceDay_ERD.pdf` - supplied Part 1 entity relationship diagram
-- `RaceDay_Database.sql` - preserved Part 1 SQL script
-- `RaceDay_Part2_Database.sql` - Part 2 schema reference including the required event fields and event-enrolment relationship
-- `RaceDay_API_Endpoint_Plan.md` - Part 2 working endpoint reference reconstructed from the current implementation
 
 **Submission action required:** the supplied project ZIP did not contain the approved Part 1 API endpoint plan. Add that exact approved document to `docs/` and compare it with `RaceDay_API_Endpoint_Plan.md`. Do not submit the reconstructed reference as though it were the original approved Part 1 document.
 
