@@ -1,8 +1,4 @@
-# RaceDay
 
-RaceDay is a race-day management system. **Organisers** create events (runs, walks and cycle races), define
-categories for each event and capture race results. **Participants** register, browse events, enter an event under
-a category and view their own results.
 
 This repository contains the planning documents from **Part 1** and the working RESTful API built for **Part 2**
 (PROG6212 PoE).
