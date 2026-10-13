@@ -14,7 +14,14 @@ Authentication is session-based: a successful login stores the user's `UserId` a
 session, and every protected endpoint checks that session on each request. Passwords are never stored in plain
 text, only as a salted hash.
 
+## User Roles
 
+### Organiser
+- Registers, logs in and views/updates their own profile.
+- Creates, updates and deletes **their own** events; views the events they own.
+- Creates, updates and deletes categories for **their own** events.
+- Views the enrolments for their own events and changes an enrolment's status.
+- Records finish times and finishing positions, and views the results of their own events.
 
 ### Participant
 - Registers, logs in and views/updates their own profile.
