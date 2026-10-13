@@ -218,12 +218,8 @@ is needed. They cover:
 and run all unit tests.
 
 ### GitHub Actions Screenshot
+<img width="1891" height="916" alt="Screenshot 2026-10-13 133310" src="https://github.com/user-attachments/assets/94bd166f-1290-4353-8314-f0ed569f84fa" />
 
-**Before submission:** after pushing this repository, open the latest successful GitHub Actions run, take a screenshot
-showing the green successful status, save it as `docs/ci-green.png`, and include it below. A genuine screenshot cannot
-be created until GitHub has actually run the workflow.
-
-<!-- After saving the real screenshot, add: ![GitHub Actions successful build](docs/ci-green.png) -->
 
 ### Video Presentation
 
