@@ -7,12 +7,7 @@ a category and view their own results.
 This repository contains the planning documents from **Part 1** and the working RESTful API built for **Part 2**
 (PROG6212 PoE).
 
-## Project Description
 
-The API is an ASP.NET Core Web API (.NET 8) backed by SQL Server, using Entity Framework Core Code First.
-Authentication is session-based: a successful login stores the user's `UserId` and `Role` in a server-side
-session, and every protected endpoint checks that session on each request. Passwords are never stored in plain
-text, only as a salted hash.
 
 ## User Roles
 
