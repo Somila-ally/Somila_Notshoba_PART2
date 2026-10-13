@@ -1,0 +1,20 @@
+# .NET build output
+**/bin/
+**/obj/
+*.dll
+*.pdb
+
+# Visual Studio / IDE state
+.vs/
+*.user
+*.suo
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local databases and secrets
+*.db
+appsettings.Development.json
