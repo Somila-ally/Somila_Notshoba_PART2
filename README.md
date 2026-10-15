@@ -225,7 +225,8 @@ and run all unit tests.
 
 **Before submission:** replace the placeholder with the shareable URL of your unlisted YouTube demonstration.
 
-`[ADD YOUR UNLISTED YOUTUBE VIDEO LINK HERE]`
+`https://youtu.be/Fy1kt-7st4g
+[ADD YOUR UNLISTED YOUTUBE VIDEO LINK HERE]`
 
 
 ## Verification status and submission reminders
